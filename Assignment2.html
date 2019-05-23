@@ -1,0 +1,194 @@
+<html>
+
+    <head>
+
+        <title>
+            CALCULATOR
+        </title>
+
+    </head>
+
+    <body bgcolor="ECC00D">
+        <br>
+       <center><h1>JAVASCRIPT CALCULATOR</h1></center> 
+       <hr size="15" color="white">
+       <div id="div1"></div>
+
+       <script>
+          var div=document.createElement("div")
+          div.setAttribute('align','center')
+          var input= document.createElement("input")
+          input.setAttribute('id','display')
+          input.setAttribute('placeholder','0')
+          input.setAttribute('style','width:254px; height:64px; text-align:right; font-size:30; border-radius:8px; margin:3px');
+          var br=document.createElement("br")
+          div.appendChild(input)
+          div.appendChild(br)
+         
+          var btn1=document.createElement("button")
+          btn1.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn1.onclick=function (){
+              document.getElementById("display").value +="7"
+          }
+          btn1.innerHTML="7"
+          div.appendChild(btn1)
+
+          var btn2=document.createElement("button")
+          btn2.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn2.onclick=function (){
+              document.getElementById("display").value +="8"
+          }
+          btn2.innerHTML="8"
+          div.appendChild(btn2)
+
+          var btn3=document.createElement("button")
+          btn3.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn3.onclick=function (){
+              document.getElementById("display").value +="9"
+          }         
+          btn3.innerHTML="9"
+          div.appendChild(btn3)
+
+          var btn4=document.createElement("button")
+          btn4.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn4.onclick=function (){
+              document.getElementById("display").value +="+"
+          }
+          btn4.innerHTML="+"
+          var br=document.createElement("br")
+          div.appendChild(btn4)
+          div.appendChild(br)
+
+          var btn5=document.createElement("button")
+          btn5.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn5.onclick=function (){
+              document.getElementById("display").value +="4"
+          }
+          btn5.innerHTML="4"
+          div.appendChild(btn5)
+
+          var btn6=document.createElement("button")
+          btn6.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn6.onclick=function (){
+              document.getElementById("display").value +="5"
+          }
+          btn6.innerHTML="5"
+          div.appendChild(btn6)
+
+          var btn7=document.createElement("button")
+          btn7.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn7.onclick=function (){
+              document.getElementById("display").value +="6"
+          }
+          btn7.innerHTML="6"
+          div.appendChild(btn7)
+
+          var btn8=document.createElement("button")
+          btn8.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn8.onclick=function (){
+              document.getElementById("display").value +="-"
+          }
+          btn8.innerHTML="-"
+          var br=document.createElement("br")
+          div.appendChild(btn8)
+          div.appendChild(br)
+
+          var btn9=document.createElement("button")
+          btn9.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn9.onclick=function (){
+              document.getElementById("display").value +="1"
+          }
+          btn9.innerHTML="1"
+          div.appendChild(btn9)
+
+          var btn10=document.createElement("button")
+          btn10.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn10.onclick=function (){
+              document.getElementById("display").value +="2"
+          }
+          btn10.innerHTML="2"
+          div.appendChild(btn10)
+
+          var btn11=document.createElement("button")
+          btn11.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn11.onclick=function (){
+              document.getElementById("display").value +="3"
+          }
+          btn11.innerHTML="3"
+          div.appendChild(btn11)
+
+          var btn12=document.createElement("button")
+          btn12.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn12.onclick=function (){
+              document.getElementById("display").value +="*"
+          }
+          btn12.innerHTML="*"
+          var br=document.createElement("br")
+          div.appendChild(btn12)
+          div.appendChild(br)
+
+          var btn13=document.createElement("button")
+          btn13.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn13.onclick=function (){
+              document.getElementById("display").value +="0"
+          }
+          btn13.innerHTML="0"
+          div.appendChild(btn13)
+
+          var btn14=document.createElement("button")
+          btn14.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn14.onclick=function (){
+              document.getElementById("display").value +="%"
+          }
+          btn14.innerHTML="%"
+          div.appendChild(btn14)
+
+          var btn15=document.createElement("button")
+          btn15.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn15.onclick=function (){
+              document.getElementById("display").value +="."
+          }
+          btn15.innerHTML="."
+          div.appendChild(btn15)
+
+          var btn16=document.createElement("button")
+          btn16.setAttribute('style','width:60px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn16.onclick=function (){
+              document.getElementById("display").value +="/"
+          }
+          btn16.innerHTML="/"
+          var br=document.createElement("br")
+          div.appendChild(btn16)
+          div.appendChild(br)
+
+          var btn17=document.createElement("button")
+          btn17.setAttribute('style','width:124px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn17.onclick=function (){
+              document.getElementById("display").value =eval(document.getElementById("display").value)
+          }
+          btn17.innerHTML="="
+          div.appendChild(btn17)
+
+          var btn18=document.createElement("button")
+          btn18.setAttribute('style','width:124px; height:60px; font-size:30; border-radius:8px; margin:3px')
+          btn18.onclick=function (){
+              document.getElementById("display").value =""
+          }
+          btn18.innerHTML="C"
+          div.appendChild(btn18)
+
+
+          function btn1(){
+              document.getElementById("display").innerHTML=7
+          }
+
+
+
+          document.getElementById('div1').appendChild(div)
+          
+          
+       
+       
+       </script>
+    </body>
+</html>
